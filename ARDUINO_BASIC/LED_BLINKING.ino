@@ -6,7 +6,7 @@ void setup(){
 }
 void loop(){
   digitalWrite(LED , HIGH);                  // LED is ON 
-  delay(250);                                // LED is ON for 1000 miliseconds
+  delay(250);                                // LED is ON for 250 miliseconds
   digitalWrite(LED , LOW);                   // LED is OFF
-  delay(250);                                // LED is OFF for 1000 miliseconds
+  delay(250);                                // LED is OFF for 250 miliseconds
 }
