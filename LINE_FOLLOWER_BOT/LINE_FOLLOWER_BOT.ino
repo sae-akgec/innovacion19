@@ -1,11 +1,11 @@
 // LINE FOLLOWER BOT
 
-int IR1 = 12;                                                             //IR1 right side
-int IR2 = 14;                                                             //IR2 left side
+int IR1 = 12;                                                             //IR1 right side (D6)
+int IR2 = 14;                                                             //IR2 left side (D5)
 void setup(){ 
-  pinMode(5,OUTPUT);                                                      //Pin 5 & 4 are for Left Motor
+  pinMode(5,OUTPUT);                                                      //Pin 5(D1) & 4(D2) are for Left Motor
   pinMode(4,OUTPUT);
-  pinMode(0,OUTPUT);                                                      //Pin 0 & 2 are for Right Motor
+  pinMode(0,OUTPUT);                                                      //Pin 0(D3) & 2(D4) are for Right Motor
   pinMode(2,OUTPUT);
   pinMode(IR1,INPUT);
   pinMode(IR2,INPUT);
