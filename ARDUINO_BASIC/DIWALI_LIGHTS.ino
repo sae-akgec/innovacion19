@@ -1,10 +1,11 @@
 // DIWALI LIGHTS 
 
-int ledOne = 5;
-int ledTwo = 15;
-int ledThree = 14;
-int ledFour = 12;
-int ledFive = 13;
+int ledOne = 5;                          // connect LED at GPIO pin 5 (D1)
+int ledTwo = 4;                          // connect LED at GPIO pin 4 (D2)
+int ledThree = 0;                        // connect LED at GPIO pin 0 (D3)
+int ledFour = 2;                         // connect LED at GPIO pin 2 (D4)
+int ledFive = 14;                        // connect LED at GPIO pin 14 (D5)
+
 void setup(){
   pinMode(ledOne , OUTPUT);
   pinMode(ledTwo , OUTPUT);
@@ -12,6 +13,7 @@ void setup(){
   pinMode(ledFour , OUTPUT);
   pinMode(ledFive , OUTPUT);
 }
+
 void loop(){
   digitalWrite(ledOne , HIGH);
   digitalWrite(ledFive , HIGH);
