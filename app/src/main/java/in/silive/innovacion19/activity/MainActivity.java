@@ -28,6 +28,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, AboutActivity.class);
         startActivity(intent);
     }
+    @OnClick(R.id.main_developer_button)
+    public void developerClicked(){
+        Intent intent = new Intent(this, DeveloperActivity.class);
+        startActivity(intent);
+    }
 
     @OnClick(R.id.main_led_button)
     public void ledClicked(){
