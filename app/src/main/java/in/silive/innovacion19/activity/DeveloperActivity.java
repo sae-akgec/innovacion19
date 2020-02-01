@@ -1,7 +1,7 @@
 package in.silive.innovacion19.activity;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 import in.silive.innovacion19.R;
 

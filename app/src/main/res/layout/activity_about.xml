@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    android:background="@color/colorWhite"
     tools:context=".activity.AboutActivity">
 
 
     <ImageView
         android:id="@+id/bot_back"
-        android:layout_width="397dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:srcCompat="@drawable/about333"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="-227dp" />
+        app:srcCompat="@drawable/about333"/>
 
 </RelativeLayout>

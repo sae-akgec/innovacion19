@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:targetSandboxVersion="1"
     package="in.silive.innovacion19">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -10,8 +12,10 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/logor"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".activity.DeveloperActivity"></activity>
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activity.DeveloperActivity" />
         <activity android:name=".activity.IpActivity" />
         <activity android:name=".activity.SplashActivity">
             <intent-filter>
@@ -24,7 +28,7 @@
         <activity android:name=".activity.BotActivity" />
         <activity android:name=".activity.RelayActivity" />
         <activity android:name=".activity.LedActivity" />
-        <activity android:name=".activity.MainActivity"></activity>
+        <activity android:name=".activity.MainActivity" />
     </application>
 
 </manifest>

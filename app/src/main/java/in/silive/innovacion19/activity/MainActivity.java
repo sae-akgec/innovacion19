@@ -1,15 +1,11 @@
 package in.silive.innovacion19.activity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.EditText;
-import android.widget.Toast;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import in.silive.innovacion19.PrefUtils;
 import in.silive.innovacion19.R;
 
 public class MainActivity extends AppCompatActivity {

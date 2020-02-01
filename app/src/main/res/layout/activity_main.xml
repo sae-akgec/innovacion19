@@ -1,76 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWhite"
     tools:context=".activity.MainActivity">
 
 
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="209dp" />
-
-    <ImageView
+    <ImageButton
         android:id="@+id/main_bot_button"
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
         android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
-        app:layout_constraintHorizontal_bias="0.539"
+        android:background="@drawable/roundcorner"
+        android:elevation="5dp"
+        android:scaleType="centerInside"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintBottom_toTopOf="@+id/main_led_button"
         app:srcCompat="@drawable/bot3333" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/main_led_button"
-        android:layout_width="211dp"
-        android:layout_height="301dp"
-        android:padding="20dp"
-        android:scaleType="fitCenter"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:background="@drawable/roundcorner"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/main_developer_button"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/main_home_button"
-        app:layout_constraintTop_toBottomOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/main_bot_button"
         app:srcCompat="@drawable/led3333" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/main_home_button"
-        android:layout_width="176dp"
-        android:layout_height="324dp"
-        android:padding="20dp"
-        android:scaleType="fitCenter"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:background="@drawable/roundcorner"
+        android:elevation="5dp"
         app:layout_constraintLeft_toRightOf="@+id/main_led_button"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/guideline"
+        app:layout_constraintBottom_toTopOf="@+id/main_club_button"
+        app:layout_constraintTop_toBottomOf="@+id/main_bot_button"
         app:srcCompat="@drawable/home22" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/main_developer_button"
-        android:layout_width="184dp"
-        android:layout_height="285dp"
-        android:padding="20dp"
-        android:scaleType="fitCenter"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:background="@drawable/roundcorner"
+        android:elevation="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/main_club_button"
         app:layout_constraintTop_toBottomOf="@+id/main_led_button"
         app:srcCompat="@drawable/info3333" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/main_club_button"
-        android:layout_width="181dp"
-        android:layout_height="215dp"
-        android:padding="20dp"
-        android:scaleType="fitCenter"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:background="@drawable/roundcorner"
+        android:elevation="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/main_developer_button"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/main_home_button"
         app:srcCompat="@drawable/club3333" />
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

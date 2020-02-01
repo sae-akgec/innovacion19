@@ -17,7 +17,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
     private static Retrofit retrofit = null;
-    private static int REQUEST_TIMEOUT = 60;
+    private static int REQUEST_TIMEOUT = 5;
     private static OkHttpClient okHttpClient;
 
     public static Retrofit getClient(Context context) {
@@ -51,18 +51,15 @@ public class ApiClient {
 
         httpClient.addInterceptor(interceptor);
 
-        httpClient.addInterceptor(new Interceptor() {
-            @Override
-            public Response intercept(Chain chain) throws IOException {
-                Request original = chain.request();
-                Request.Builder requestBuilder = original.newBuilder()
-                        .addHeader("Accept", "application/json")
-                        .addHeader("Content-Type", "application/json");
+        httpClient.addInterceptor(chain -> {
+            Request original = chain.request();
+            Request.Builder requestBuilder = original.newBuilder()
+                    .addHeader("Accept", "application/json")
+                    .addHeader("Content-Type", "application/json");
 
 
-                Request request = requestBuilder.build();
-                return chain.proceed(request);
-            }
+            Request request = requestBuilder.build();
+            return chain.proceed(request);
         });
 
         okHttpClient = httpClient.build();
